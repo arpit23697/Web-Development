@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width , initial-scale = 1">
+    <meta name="description" content="Puzzle game front page">
+    <meta name="author" content="Arpit singh">
+    <meta name="date" content="June 20 , 2018">
+    <title>Puzzle Quests</title>
+
+    <!--This is to include the bootstrap libraries-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!--File created by the author for self made file-->
+    <link rel="stylesheet" href="easy_5.css">
+
+    <!--This one is for the google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+
+    <!--Font for the button-->
+    <link href='https://fonts.googleapis.com/css?family=IM Fell Great Primer' rel='stylesheet'>
+
+    <!--Font for the time-->
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+    <!--This is to include the jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--To add the audio-->
+    <audio autoplay loop id="sound">
+        <source src="/home/arpit/study/webDevelopment/project/audio/Time_2.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <div class="Time">
+        <span id="countdowntimer">01:00</span>
+    </div>
+
+    <!--This block is going to container the container for the answer-->
+    <section class="container">
+        <div class="card">
+            <div class="front1">
+
+                <span class="ques"> A factory was cutting rolls of cloth into 1 metre lengths, 
+                    from a 200 metre roll. How long would it take for the machine
+                to cut the roll if each cut took 4 secs?</span>
+                <br>
+                <br>
+                <form>
+                    <div class="custom-control custom-radio">
+                        <input name="ans" type="radio" class="custom-control-input" id="customRadio1" value="796">
+                        <label class="custom-control-label" for="customRadio1">
+                            <span class="ques">796 sec</span>
+                        </label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input name="ans" type="radio" class="custom-control-input" id="customRadio2" value="700">
+                        <label class="custom-control-label" for="customRadio2">
+                            <span class="ques">700 sec</span>
+                        </label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input name="ans" type="radio" class="custom-control-input" id="customRadio3" value="800">
+                        <label class="custom-control-label" for="customRadio3">
+                            <span class="ques">800 sec</span>
+                        </label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input name="ans" type="radio" class="custom-control-input" id="customRadio4" value="400">
+                        <label class="custom-control-label" for="customRadio4">
+                            <span class="ques">400 sec</span>
+                        </label>
+                    </div>
+                </form>
+
+                <!--This is for the button in the front page.-->
+                <div class="optionBlock" style="margin-left : 38% ; margin-top : 18%;">
+                    <button type="button" href="#" class="buttonBlock">
+                        <span class="buttonText" onclick="flip()"> Submit </span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="back2">
+
+                <div class="explanation" style=" margin-left : 35% ; margin-top : -5%;">
+                    Explanation
+                </div>
+                <div class="textExplanation">
+                    <span class="ques">  200m would only take 199 cuts not 200 cuts. So the answer is 199 x 4 = 796.
+                    </span>
+                </div>
+
+                <div id="wrong" style=" margin-left : 40% ; ">
+                    Wrong
+                </div>
+
+                <div id="correct" style="margin-left : 39% ; margin-top : -7% ;">
+                    Correct
+                </div>
+
+                <div class="optionBlock" style="margin-left : 32%; margin-top : 2%;">
+                    <button type="button" href="#" class="buttonBlock">
+                        <span class="buttonText" onclick="flip()"> Ques </span>
+                    </button>
+
+                    <a style : "margin-left : 30%;" type="button" href="/home/arpit/study/webDevelopment/project/codes/front.html" class="buttonBlock">
+                        <span class="buttonText"> Over </span>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+        </div>
+
+    </section>
+    <!-- <p id = "demo" style = "color : white"> How you doing</p> -->
+
+    <!--This is to include the trip-->
+    <script src="easy_5.js"></script>
+
+</body>
+
+</html>

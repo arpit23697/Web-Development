@@ -1,0 +1,235 @@
+/*This is to set the background*/
+@font-face{
+ font-family:'digital-7';
+src: url('/home/arpit/study/webDevelopment/clock-master/fonts/digital-7.ttf');
+}
+
+
+body {
+    background-image : url("/home/arpit/study/webDevelopment/project/images/brain.png");
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-size : 100% 100vh;
+}
+
+.Time {
+    margin-left : 81%;
+    margin-top : 2.5%;
+    border-radius : 2px;
+    box-shadow :  0 5px 5px -2px yellow , 0 5px 5px -2px red ,0 5px 5px -2px blue;
+    width : 9.5%;
+}
+
+#countdowntimer {
+    text-align : center;
+    font-size : 40px;
+    text-shadow : 1px 1px 2px rgb(93, 93, 196), 0 0 25px blue ,0 0 100px rgb(12, 117, 236);
+    color : white;
+    font-family:'digital-7';
+    letter-spacing: 10px;
+}
+/*
+.front {
+    width : 50%;
+    height : 70vh;
+    position : absolute;
+    box-shadow : 0 0 100px rgb(255, 123, 0), 0 0 25px blue ,0 0 100px yellow;
+    right : 20%;
+    bottom : 10%;
+    border-radius : 50px;
+    padding-left : 30px;
+    padding-top : 40px;
+    padding-right : 30px;
+}*/
+
+.ques {
+    
+    color : white;
+    letter-spacing : 1px;
+    word-spacing : 4px;
+    font-family : "Adamina";
+    text-shadow : 1px 1px 2px blue;
+}
+
+
+/*This is for the button*/
+
+.buttonText {
+    
+  font-family: 'IM Fell Great Primer';
+ font-size: 30px;
+ line-height: 20px;
+ color : black;
+ text-shadow : 1px 1px 2px rgb(93, 93, 196), 0 0 25px blue ,0 0 100px rgb(12, 117, 236);
+ font-variant : small-caps;
+}
+
+a:hover {
+    text-decoration : none;
+}
+
+
+.buttonBlock {
+	-moz-box-shadow: 1px 1px 2px rgb(93, 93, 196), 0 0 25px yellow ,0 0 100px red;
+	-webkit-box-shadow: -3px 2px 15px 3px #1c1b18;
+	box-shadow: 1px 1px 2px rgb(93, 93, 196), 0 0 25px yellow ,0 0 100px red;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+	background:-moz-linear-gradient(top, #f3b808 5%, rgb(255, 94, 0) 100%);
+	background:-webkit-linear-gradient(top, #f3b808 5%, rgb(255, 94, 0) 100%);
+	background:-o-linear-gradient(top, #f3b808 5%, rgb(255, 94, 0) 100%);
+	background:-ms-linear-gradient(top, #f3b808 5%, rgb(255, 94, 0) 100%);
+	background:linear-gradient(to bottom, #f3b808 5%, rgb(255, 94, 0) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+	background-color:#f1c540;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+/*	border:2px solid #333029;*/
+	display:inline-block;
+	cursor:pointer;
+	color:yellow;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.buttonBlock:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+	background:-moz-linear-gradient(top, #b89025 5%, #f8bb02 100%);
+	background:-webkit-linear-gradient(top, #b89025 5%, #f8bb02 100%);
+	background:-o-linear-gradient(top, #b89025 5%, #f8bb02 100%);
+	background:-ms-linear-gradient(top, #b89025 5%, #f8bb02 100%);
+	background:linear-gradient(to bottom, #b89025 5%, #f8bb02 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+	background-color : #b89025;
+}
+.buttonBlock:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+.container {
+    width: 50%;
+    height: 70vh;
+    position: relative;
+    box-shadow : 0 0 100px rgb(255, 123, 0), 0 0 25px blue ,0 0 100px yellow;
+    right : 20%;
+    bottom : 10%;
+    border-radius : 50px;
+    padding-left : 30px;
+    padding-top : 40px;
+    padding-right : 30px;
+
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left : 0%;
+    top : 0%;
+    box-shadow : 0 0 15px rgb(255, 123, 0), 0 0 15px blue ,0 0 15px yellow;
+    border-radius : 50px;
+    padding-left : 30px;
+    padding-top : 40px;
+    padding-right : 30px;
+    
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.card .front1 {
+      display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left : 0%;
+    top : 0%;
+    box-shadow : 0 0 15px rgb(255, 123, 0), 0 0 15px blue ,0 0 15px yellow;
+    border-radius : 50px;
+    padding-left : 30px;
+    padding-top : 40px;
+    padding-right : 30px;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    background : black;
+  /*background: red;*/
+}
+.card .back2 {
+      display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left : 0%;
+    top : 0%;
+    box-shadow : 0 0 15px rgb(255, 123, 0), 0 0 15px blue ,0 0 15px yellow;
+    border-radius : 50px;
+    padding-left : 30px;
+    padding-top : 40px;
+    padding-right : 30px;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    background:black;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+.card.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.explanation {
+   font-family: 'IM Fell Great Primer';
+ /*font-family: 'Lobster', Georgia, Times, serif;*/
+ font-size: 40px;
+ line-height: 100px;
+ color : white;
+ text-shadow : 1px 1px 2px rgb(93, 93, 196), 0 0 25px blue ,0 0 100px rgb(12, 117, 236);
+ 
+}
+
+#wrong {
+       font-family: 'IM Fell Great Primer';
+ color : orangered;
+ font-size: 40px;
+ line-height: 100px;
+ text-shadow : 1px 1px 2px green, 0 0 25px yellow ;
+ 
+}
+
+
+#correct {
+       font-family: 'IM Fell Great Primer';
+ color : green;
+ font-size: 40px;
+ line-height: 100px;
+text-shadow : 1px 1px 2px green, 0 0 25px yellow ;
+ 
+}

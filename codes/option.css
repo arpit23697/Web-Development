@@ -1,0 +1,95 @@
+/*This is to set the background*/
+body {
+    background-image : url("/home/arpit/study/webDevelopment/project/images/fire.jpg");
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-size : 100% 100vh;
+}
+
+.option-template {
+    width : 50%;
+    height : 60vh;
+   /* background-image : url("/home/arpit/study/webDevelopment/project/images/download.jpeg");
+    background-repeat : no-repeat;
+    background-size : cover;
+    border-radius : 10px;
+    */
+    margin : auto;
+    margin-top : 120px;
+    border-radius : 20px;
+    box-shadow : 1px 1px 2px rgb(93, 93, 196), 0 0 125px yellow ,0 0 125px rgb(12, 117, 236), 0 0 125px red;
+}
+
+.headingText {
+   font-family: 'IM Fell Great Primer';
+ /*font-family: 'Lobster', Georgia, Times, serif;*/
+ font-size: 50px;
+ line-height: 100px;
+ color : white;
+ text-shadow : 1px 1px 2px rgb(93, 93, 196), 0 0 25px blue ,0 0 100px rgb(12, 117, 236);
+ 
+}
+
+
+.buttonText {
+    
+  font-family: 'IM Fell Great Primer';
+/*
+ font-family: 'Lobster', Georgia, Times, serif;*/
+ font-size: 30px;
+ line-height: 20px;
+ color : black;
+ text-shadow : 1px 1px 2px rgb(93, 93, 196), 0 0 25px blue ,0 0 100px rgb(12, 117, 236);
+ font-variant : small-caps;
+}
+
+.heading {
+
+    position : relative;
+    margin : 0 27%;
+}
+
+a:hover {
+    text-decoration : none;
+}
+
+.button {
+	-moz-box-shadow: 1px 1px 2px rgb(93, 93, 196), 0 0 25px yellow ,0 0 100px red;
+	-webkit-box-shadow: -3px 2px 15px 3px #1c1b18;
+	box-shadow: 1px 1px 2px rgb(93, 93, 196), 0 0 25px yellow ,0 0 100px red;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+	background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+	background-color:#f1c540;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+/*	border:2px solid #333029;*/
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+	background:-moz-linear-gradient(top, #b89025 5%, #eae0c2 100%);
+	background:-webkit-linear-gradient(top, #b89025 5%, #eae0c2 100%);
+	background:-o-linear-gradient(top, #b89025 5%, #eae0c2 100%);
+	background:-ms-linear-gradient(top, #b89025 5%, #eae0c2 100%);
+	background:linear-gradient(to bottom, #b89025 5%, #eae0c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+	background-color : #b89025;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}

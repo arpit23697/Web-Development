@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width , initial-scale = 1">
+    <meta name="description" content="Puzzle game front page">
+    <meta name="author" content="Arpit singh">
+    <meta name="date" content="June 20 , 2018">
+    <title>Puzzle Quests</title>
+
+    <!--This is to include the bootstrap libraries-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!--File created by the author for self made file-->
+    <link rel = "stylesheet" href = "front.css">   
+
+    <!--This one is for the google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+    <!--Font for the button-->
+    <link href='https://fonts.googleapis.com/css?family=IM Fell Great Primer' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!--To add the audio-->
+    <audio loop autoplay>
+        <source src="/home/arpit/study/webDevelopment/project/audio/horror/Corridor.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+
+    <!--This block is to include the heading-->
+    <div id = "heading-block">
+        <h1 id = "front-heading"> Puzzle Quests </h1> 
+       
+    </div>  
+    <!--The width of the block is 1366px-->
+    <!--This block is for the play button-->
+    <div style = "margin-left : 29.28%; margin-top : 20px;" >
+        <a class = "button"  href = "/home/arpit/study/webDevelopment/project/codes/option.html" type = "button">
+           <span class = "buttonText"> Play Now </span>
+        </a>        
+    </div>
+    <!--This block is for the About button-->
+    <div style="margin-left : 30.38%; margin-top : 20px;">
+        <a class="button" href="/home/arpit/study/webDevelopment/HTML5/codes/class.html" type="button">
+            <span class="buttonText"> About </span>
+        </a>
+    </div>
+    <!--This block is for the close button-->
+    <div style="margin-left : 30.74%; margin-top : 20px;">
+        <button class="button" type="button" data-toggle = "modal" data-target = "#myModal">
+            <span class="buttonText"> Quit </span>
+        </button>
+    </div>
+
+    <div class = "modal fade" id = "myModal">
+        <div class = "modal-dialog">
+            <div class = "modal-content">
+
+                
+                <div class = "modal-body">
+                    <button type="button"  class="close" data-dismiss="modal" style = "color : black;">&times;</button>
+                    <div style = "margin-left : 23%; margin-top : 10%">Are you sure you want to quit ? </div>
+                    <button type="button" style = "margin-top : 10% ; margin-left : 45%;" class="btn btn-danger" onclick="window.close()">Yes</button>
+                </div>    
+
+                
+                
+            </div>
+        </div>    
+    </div>
+    
+    
+
+</body>
+
+</html>
